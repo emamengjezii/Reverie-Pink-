@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverie Pink - Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation & Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <h1 class="logo">Reverie Pink</h1>
+                <p class="slogan">A boutique which makes your dreams reality.</p>
+            </div>
+            <div class="header-actions">
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="wishlist-icon" onclick="toggleWishlist()">
+                    ❤️ <span class="wishlist-count" id="wishlistCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar with Filters -->
+        <aside class="sidebar">
+            <div class="filters">
+                <h3>Filters</h3>
+                
+                <!-- Price Filter -->
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <input type="range" id="priceFilter" min="0" max="500" value="500" class="price-slider">
+                    <div class="price-display">
+                        <span>$0</span> - <span id="priceValue">$500</span>
+                    </div>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="filter-group">
+                    <h4>Rating</h4>
+                    <div class="rating-filter">
+                        <label>
+                            <input type="checkbox" value="5" class="rating-checkbox"> ⭐⭐⭐⭐⭐ 5 Stars
+                        </label>
+                        <label>
+                            <input type="checkbox" value="4" class="rating-checkbox"> ⭐⭐⭐⭐ 4+ Stars
+                        </label>
+                        <label>
+                            <input type="checkbox" value="3" class="rating-checkbox"> ⭐⭐⭐ 3+ Stars
+                        </label>
+                        <label>
+                            <input type="checkbox" value="2" class="rating-checkbox"> ⭐⭐ 2+ Stars
+                        </label>
+                    </div>
+                </div>
+
+                <button class="reset-filters" onclick="resetFilters()">Reset Filters</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Best Sellers Section -->
+            <section class="featured-section">
+                <h2>✨ Best Sellers</h2>
+                <div class="products-grid" id="bestSellersGrid">
+                    <!-- Best sellers will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Categories Section -->
+            <section class="categories-section">
+                <!-- Makeup Category -->
+                <div class="category">
+                    <h2 class="category-title">💄 Makeup</h2>
+                    <div class="products-grid" id="makeupCategory">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Skincare Category -->
+                <div class="category">
+                    <h2 class="category-title">✨ Skincare</h2>
+                    <div class="products-grid" id="skincareCategory">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Clothing Category -->
+                <div class="category">
+                    <h2 class="category-title">👗 Clothing</h2>
+                    <div class="products-grid" id="clothingCategory">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Jewelry Category -->
+                <div class="category">
+                    <h2 class="category-title">💎 Jewelry</h2>
+                    <div class="products-grid" id="jewelryCategory">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Perfumes Category -->
+                <div class="category">
+                    <h2 class="category-title">🌸 Perfumes</h2>
+                    <div class="products-grid" id="perfumesCategory">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-btn" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-message">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Wishlist Sidebar -->
+    <aside class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Wishlist</h3>
+            <button class="close-btn" onclick="toggleWishlist()">✕</button>
+        </div>
+        <div class="wishlist-items" id="wishlistItems">
+            <p class="empty-message">Your wishlist is empty</p>
+        </div>
+    </aside>
+
+    <!-- Overlay for modals -->
+    <div class="overlay" id="overlay" onclick="closeModals()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
