@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverie Pink - Boutique</title>
+    <link href="https://dl.dafont.com/dl/?f=makcasa" rel="stylesheet" type="text/css"/>
     <style>
+@font-face {
+    font-family: "Makcasa";
+    src: url("https://dl.dafont.com/dl/?f=makcasa");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -52,16 +58,18 @@ body {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-family: "Makcasa", cursive;
+    font-size: 3.5rem;
     font-weight: 800;
     color: var(--text-black);
     text-shadow: 2px 2px 0px var(--gold), 4px 4px 0px rgba(218, 165, 32, 0.3);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 0.5rem;
 }
 
 .slogan {
-    font-size: 0.95rem;
+    font-family: "Makcasa", cursive;
+    font-size: 1.2rem;
     color: var(--text-black);
     font-style: italic;
     text-shadow: 1px 1px 0px var(--gold);
@@ -134,10 +142,11 @@ body {
 }
 
 .filters h3 {
+    font-family: "Makcasa", cursive;
     color: var(--text-black);
     text-shadow: 1px 1px 0px var(--gold);
     margin-bottom: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .filter-group {
@@ -240,10 +249,11 @@ body {
 }
 
 .featured-section h2 {
+    font-family: "Makcasa", cursive;
     color: var(--text-black);
     text-shadow: 2px 2px 0px var(--gold);
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -261,10 +271,11 @@ body {
 }
 
 .category-title {
+    font-family: "Makcasa", cursive;
     color: var(--text-black);
     text-shadow: 2px 2px 0px var(--gold);
     margin-bottom: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 /* ========== PRODUCTS GRID ========== */
@@ -442,6 +453,7 @@ body {
 
 .cart-header h3,
 .wishlist-header h3 {
+    font-family: "Makcasa", cursive;
     color: var(--text-black);
     text-shadow: 1px 1px 0px var(--gold);
 }
@@ -611,7 +623,7 @@ body {
     }
 
     .logo {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .header-content {
@@ -622,11 +634,11 @@ body {
 
 @media (max-width: 768px) {
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .slogan {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .header-actions {
@@ -649,7 +661,7 @@ body {
     }
 
     .category-title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .product-card {
@@ -670,11 +682,11 @@ body {
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .slogan {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .products-grid {
@@ -756,9 +768,9 @@ body {
                 <!-- Price Filter -->
                 <div class="filter-group">
                     <h4>Price Range</h4>
-                    <input type="range" id="priceFilter" min="0" max="500" value="500" class="price-slider">
+                    <input type="range" id="priceFilter" min="0" max="150" value="150" class="price-slider">
                     <div class="price-display">
-                        <span>$0</span> - <span id="priceValue">$500</span>
+                        <span>$0</span> - <span id="priceValue">$150</span>
                     </div>
                 </div>
 
@@ -873,47 +885,47 @@ body {
     <div class="overlay" id="overlay" onclick="closeModals()"></div>
 
     <script>
-// Sample product data for all categories
+// Sample product data with AFFORDABLE prices and REAL images
 const products = {
     makeup: [
-        { id: 1, name: 'Velvet Lipstick', price: 28.99, rating: 4.8, image: '💄', category: 'makeup', featured: true },
-        { id: 2, name: 'Eyeshadow Palette', price: 45.99, rating: 4.9, image: '👁️', category: 'makeup', featured: true },
-        { id: 3, name: 'Mascara Pro', price: 22.99, rating: 4.7, image: '💫', category: 'makeup' },
-        { id: 4, name: 'Blush Powder', price: 19.99, rating: 4.6, image: '🌸', category: 'makeup' },
-        { id: 5, name: 'Foundation SPF', price: 38.99, rating: 4.8, image: '💄', category: 'makeup', featured: true },
-        { id: 6, name: 'Eyeliner Liquid', price: 16.99, rating: 4.5, image: '✏️', category: 'makeup' },
+        { id: 1, name: 'Velvet Lipstick', price: 8.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQH-4VT25hxhP7R3j67bOjujgkX803aqu_nH6MuoVT_w', category: 'makeup', featured: true },
+        { id: 2, name: 'Eyeshadow Palette', price: 12.99, rating: 4.9, image: 'https://images.ctfassets.net/wlke2cbybljx/4SAosQbMpxC34oLUsT4CBP/eafa7f6ef82b16b6b8a6599292edf446/LOVE-PALETTE-open.png?bg=rgb%3Affffff&fm=png', category: 'makeup', featured: true },
+        { id: 3, name: 'Mascara Pro', price: 7.99, rating: 4.7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRviK2lV6AXJdYKjOdLm_WLNlO7WDkeum3Wmxejdy0vA', category: 'makeup' },
+        { id: 4, name: 'Blush Powder', price: 6.99, rating: 4.6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-T4ZidDGHVxvbdaAl_Z78DizIXjTiKj0mgcCc9UJ7WQ', category: 'makeup' },
+        { id: 5, name: 'Foundation SPF', price: 10.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlGoI8Q7o9HWDUf9Kx4gccEgF9IK6hwPLeizLt5UZ6Q', category: 'makeup', featured: true },
+        { id: 6, name: 'Eyeliner Liquid', price: 5.99, rating: 4.5, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjI_YnblIj-MSi0S1yZkyvhwM7ouDOE4mk4yy6cztzBQ', category: 'makeup' },
     ],
     skincare: [
-        { id: 7, name: 'Moisturizing Cream', price: 52.99, rating: 4.9, image: '✨', category: 'skincare', featured: true },
-        { id: 8, name: 'Vitamin C Serum', price: 39.99, rating: 4.8, image: '🧪', category: 'skincare', featured: true },
-        { id: 9, name: 'Face Cleanser', price: 24.99, rating: 4.7, image: '🧴', category: 'skincare' },
-        { id: 10, name: 'Night Mask', price: 34.99, rating: 4.8, image: '🎭', category: 'skincare' },
-        { id: 11, name: 'Sunscreen SPF 50', price: 29.99, rating: 4.6, image: '☀️', category: 'skincare', featured: true },
-        { id: 12, name: 'Eye Cream', price: 45.99, rating: 4.7, image: '👁️', category: 'skincare' },
+        { id: 7, name: 'Moisturizing Cream', price: 14.99, rating: 4.9, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare', featured: true },
+        { id: 8, name: 'Vitamin C Serum', price: 12.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare', featured: true },
+        { id: 9, name: 'Face Cleanser', price: 8.99, rating: 4.7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare' },
+        { id: 10, name: 'Night Mask', price: 10.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare' },
+        { id: 11, name: 'Sunscreen SPF 50', price: 9.99, rating: 4.6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare', featured: true },
+        { id: 12, name: 'Eye Cream', price: 11.99, rating: 4.7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPTDyBhAsMgU_OSwFoGU8wymgZaBvbTRemDPQtHAU8Q', category: 'skincare' },
     ],
     clothing: [
-        { id: 13, name: 'Silk Blouse Pink', price: 89.99, rating: 4.8, image: '👔', category: 'clothing', featured: true },
-        { id: 14, name: 'Casual Tee', price: 39.99, rating: 4.6, image: '👕', category: 'clothing' },
-        { id: 15, name: 'Elegant Dress', price: 149.99, rating: 4.9, image: '👗', category: 'clothing', featured: true },
-        { id: 16, name: 'Denim Jeans', price: 79.99, rating: 4.7, image: '👖', category: 'clothing' },
-        { id: 17, name: 'Cardigan Sweater', price: 69.99, rating: 4.8, image: '🧶', category: 'clothing', featured: true },
-        { id: 18, name: 'Leather Jacket', price: 199.99, rating: 4.9, image: '🧥', category: 'clothing' },
+        { id: 13, name: 'Silk Blouse Pink', price: 24.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jXHC25uTtrTGlk91j-uiEJ5YnhhEhCRfyNDI171_iw', category: 'clothing', featured: true },
+        { id: 14, name: 'Casual Tee', price: 12.99, rating: 4.6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jXHC25uTtrTGlk91j-uiEJ5YnhhEhCRfyNDI171_iw', category: 'clothing' },
+        { id: 15, name: 'Elegant Dress', price: 34.99, rating: 4.9, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jXHC25uTtrTGlk91j-uiEJ5YnhhEhCRfyNDI171_iw', category: 'clothing', featured: true },
+        { id: 16, name: 'Denim Jeans', price: 22.99, rating: 4.7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jXHC25uTtrTGlk91j-uiEJ5YnhhEhCRfyNDI171_iw', category: 'clothing' },
+        { id: 17, name: 'Cardigan Sweater', price: 18.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jXHC25uTtrTGlk91j-uiEJ5YnhhEhCRfyNDI171_iw', category: 'clothing', featured: true },
+        { id: 18, name: 'Leather Jacket', price: 45.99, rating: 4.9, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLN-GUZk7cv6z8QDrqKtS_5LpYVyjoDPyQUPOkb4Xn1g', category: 'clothing' },
     ],
     jewelry: [
-        { id: 19, name: 'Diamond Ring', price: 299.99, rating: 5.0, image: '💎', category: 'jewelry', featured: true },
-        { id: 20, name: 'Pearl Necklace', price: 129.99, rating: 4.9, image: '⛓️', category: 'jewelry', featured: true },
-        { id: 21, name: 'Gold Bracelet', price: 189.99, rating: 4.8, image: '💍', category: 'jewelry' },
-        { id: 22, name: 'Stud Earrings', price: 69.99, rating: 4.7, image: '💎', category: 'jewelry' },
-        { id: 23, name: 'Vintage Brooch', price: 82.99, rating: 4.6, image: '✨', category: 'jewelry' },
-        { id: 24, name: 'Ankle Bracelet', price: 45.99, rating: 4.5, image: '⛓️', category: 'jewelry', featured: true },
+        { id: 19, name: 'Diamond Ring', price: 49.99, rating: 5.0, image: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw21a0f8be/images/large/d323f5b660e858d5890014f3df699a8e.png?sw=750&sh=750&sm=fit&sfrm=png', category: 'jewelry', featured: true },
+        { id: 20, name: 'Pearl Necklace', price: 28.99, rating: 4.9, image: 'https://i.pinimg.com/474x/14/b7/64/14b7643a199c5615f9b6ecf48eedfe88.jpg', category: 'jewelry', featured: true },
+        { id: 21, name: 'Gold Bracelet', price: 35.99, rating: 4.8, image: 'https://collectionapi.metmuseum.org/api/collection/v1/iiif/157455/329524/source', category: 'jewelry' },
+        { id: 22, name: 'Stud Earrings', price: 15.99, rating: 4.7, image: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw21a0f8be/images/large/d323f5b660e858d5890014f3df699a8e.png?sw=750&sh=750&sm=fit&sfrm=png', category: 'jewelry' },
+        { id: 23, name: 'Vintage Brooch', price: 18.99, rating: 4.6, image: 'https://collectionapi.metmuseum.org/api/collection/v1/iiif/157455/329524/source', category: 'jewelry' },
+        { id: 24, name: 'Ankle Bracelet', price: 12.99, rating: 4.5, image: 'https://i.pinimg.com/474x/14/b7/64/14b7643a199c5615f9b6ecf48eedfe88.jpg', category: 'jewelry', featured: true },
     ],
     perfumes: [
-        { id: 25, name: 'Rose Garden', price: 79.99, rating: 4.9, image: '🌹', category: 'perfumes', featured: true },
-        { id: 26, name: 'Lavender Dream', price: 64.99, rating: 4.8, image: '💜', category: 'perfumes', featured: true },
-        { id: 27, name: 'Vanilla Bliss', price: 59.99, rating: 4.7, image: '🌸', category: 'perfumes' },
-        { id: 28, name: 'Ocean Breeze', price: 69.99, rating: 4.8, image: '🌊', category: 'perfumes', featured: true },
-        { id: 29, name: 'Floral Essence', price: 84.99, rating: 4.9, image: '🌺', category: 'perfumes' },
-        { id: 30, name: 'Exotic Musk', price: 89.99, rating: 4.6, image: '✨', category: 'perfumes' },
+        { id: 25, name: 'Rose Garden', price: 19.99, rating: 4.9, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes', featured: true },
+        { id: 26, name: 'Lavender Dream', price: 16.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes', featured: true },
+        { id: 27, name: 'Vanilla Bliss', price: 14.99, rating: 4.7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes' },
+        { id: 28, name: 'Ocean Breeze', price: 17.99, rating: 4.8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes', featured: true },
+        { id: 29, name: 'Floral Essence', price: 18.99, rating: 4.9, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes' },
+        { id: 30, name: 'Exotic Musk', price: 19.99, rating: 4.6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEeiim6Vss6Utnk7vnYchITehwhCw73Rw4ggwba9NXg', category: 'perfumes' },
     ]
 };
 
@@ -921,7 +933,7 @@ const products = {
 let cart = [];
 let wishlist = [];
 let selectedRatings = [];
-let maxPrice = 500;
+let maxPrice = 150;
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
@@ -982,7 +994,7 @@ function createProductCard(product) {
     return `
         <div class="product-card" data-product-id="${product.id}">
             <div class="product-image">
-                ${product.image}
+                <img src="${product.image}" alt="${product.name}" onerror="this.style.display='none'">
             </div>
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
@@ -1191,10 +1203,10 @@ function filterProducts() {
 }
 
 function resetFilters() {
-    document.getElementById('priceFilter').value = 500;
-    document.getElementById('priceValue').textContent = '$500';
+    document.getElementById('priceFilter').value = 150;
+    document.getElementById('priceValue').textContent = '$150';
     document.querySelectorAll('.rating-checkbox').forEach(cb => cb.checked = false);
-    maxPrice = 500;
+    maxPrice = 150;
     selectedRatings = [];
     renderAllProducts();
     renderBestSellers();
